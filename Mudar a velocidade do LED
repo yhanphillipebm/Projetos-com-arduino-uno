@@ -1,1 +1,17 @@
-x
+/*
+  Programa 1: Mudar a velocidade do LED
+  Altere os valores em delay() para ver o efeito.
+*/
+
+void setup() {
+  pinMode(13, OUTPUT);  // Configura o pino 13 como saída
+}
+
+void loop() {
+  int tempoDePiscada = 500; // Mude este valor!
+
+  digitalWrite(13, HIGH);      // Liga o LED
+  delay(tempoDePiscada);       // Espera pelo tempo definido
+  digitalWrite(13, LOW);       // Desliga o LED
+  delay(tempoDePiscada);       // Espera novamente
+}
