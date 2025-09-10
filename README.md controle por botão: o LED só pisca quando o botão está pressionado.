@@ -1,0 +1,31 @@
+# Programa 3: Botão de Controle 🔘💡
+
+Este programa permite que o LED conectado ao **pino 13** só pisque quando o **botão no pino 2** estiver pressionado.
+
+---
+
+## Como usar
+1. Abra a **Arduino IDE**.
+2. Copie o arquivo `botao-led.ino`.
+3. Conecte o Arduino via USB.
+4. Monte o circuito (LED + botão, veja abaixo).
+5. Compile e carregue o código.
+6. Pressione o botão para acionar o LED.
+
+---
+
+## Esquema de ligação
+- LED:
+  - Ânodo → pino 13
+  - Cátodo → resistor 220Ω–330Ω → GND
+- Botão:
+  - Um terminal → pino 2
+  - Outro terminal → GND
+  - (Opcional) resistor pull-down de 10kΩ se não usar `INPUT_PULLUP`
+
+---
+
+## Dica
+- Para usar `INPUT_PULLUP`:
+  ```cpp
+  pinMode(pinoBotao, INPUT_PULLUP);
