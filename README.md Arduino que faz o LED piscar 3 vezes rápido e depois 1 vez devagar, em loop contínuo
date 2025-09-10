@@ -1,0 +1,27 @@
+# Programa 2: Padrão de Piscadas 🔄💡
+
+Este programa faz o LED conectado ao **pino 13** piscar seguindo o padrão:
+- 3 piscadas rápidas (200ms cada)
+- 1 piscada lenta (1000ms)
+
+---
+
+## Como usar
+1. Abra a **Arduino IDE**.
+2. Copie o arquivo `padrao-led.ino`.
+3. Conecte o Arduino via USB.
+4. Compile e carregue na placa.
+5. Observe o LED piscando no padrão.
+
+---
+
+## Personalização
+- Modifique `delay(200)` para alterar a velocidade das piscadas rápidas.
+- Modifique `delay(1000)` para alterar a piscada lenta.
+
+---
+
+## Esquema de ligação
+- LED:
+  - Ânodo → pino 13
+  - Cátodo → resistor 220Ω–330Ω → GND
