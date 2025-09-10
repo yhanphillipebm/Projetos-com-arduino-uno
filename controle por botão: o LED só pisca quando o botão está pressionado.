@@ -1,0 +1,30 @@
+/*
+  Programa 3: Botão de controle
+  O LED pisca somente quando o botão está pressionado.
+*/
+
+const int pinoLed = 13;
+const int pinoBotao = 2;
+
+int estadoBotao = 0; // Variável para ler o estado do botão
+
+void setup() {
+  pinMode(pinoLed, OUTPUT);  // LED como saída
+  pinMode(pinoBotao, INPUT); // Botão como entrada
+}
+
+void loop() {
+  // Lê o estado do botão
+  estadoBotao = digitalRead(pinoBotao);
+
+  if (estadoBotao == HIGH) {
+    // Pisca o LED enquanto o botão estiver pressionado
+    digitalWrite(pinoLed, HIGH);
+    delay(200);
+    digitalWrite(pinoLed, LOW);
+    delay(200);
+  } else {
+    // Mantém LED apagado se botão não estiver pressionado
+    digitalWrite(pinoLed, LOW);
+  }
+}
