@@ -1,0 +1,26 @@
+# Programa 1: Mudar a Velocidade do LED 💡
+
+Este programa faz o LED conectado ao **pino 13** do Arduino piscar em diferentes velocidades.  
+A velocidade é controlada pela variável `tempoDePiscada`.
+
+---
+
+## Como usar
+1. Abra a **Arduino IDE**.
+2. Copie o arquivo `blink.ino` para a IDE.
+3. Conecte o Arduino via USB.
+4. Compile e carregue na placa.
+5. Observe o LED piscando.
+
+---
+
+## Personalização
+- `tempoDePiscada = 200` → Pisca rápido.
+- `tempoDePiscada = 1500` → Pisca devagar.
+
+---
+
+## Esquema de ligação
+- LED:
+  - Ânodo → pino 13
+  - Cátodo → resistor 220Ω–330Ω → GND
